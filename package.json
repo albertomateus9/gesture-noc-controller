@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.1.0",
   "type": "module",
-  "description": "Privacy-safe gesture command prototype for navigating NOC dashboards without storing camera data.",
+  "description": "Prototipo seguro para comandar paineis de NOC por gestos sem armazenar camera ou identificar pessoas.",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

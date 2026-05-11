@@ -1,23 +1,21 @@
-export type ProjectType = 'fresnel' | 'ocr' | 'colors' | 'gesture' | 'occupancy' | 'depth' | 'benchmark' | 'telemetry';
-
-export type ProjectConfig = {
-  slug: string;
-  title: string;
-  tagline: string;
-  type: ProjectType;
-  deploy: boolean;
-  topics: string[];
-  description: string;
-  accent: string;
-  secondary: string;
-};
-
+export type ProjectType = 'fresnel' | 'ocr' | 'colors' | 'gesture' | 'occupancy' | 'depth' | 'benchmark' | 'telemetry';
+
+export type ProjectConfig = {
+  slug: string;
+  title: string;
+  tagline: string;
+  type: ProjectType;
+  deploy: boolean;
+  topics: string[];
+  description: string;
+  accent: string;
+  secondary: string;
+};
+
 export const project: ProjectConfig = {
   "slug": "gesture-noc-controller",
-  "title": "Gesture NOC Controller",
-  "tagline": "Privacy-safe gesture command prototype for navigating NOC dashboards without storing camera data.",
-  "type": "gesture",
-  "deploy": false,
+  "title": "Controlador NOC Por Gestos",
+  "description": "Prototipo seguro para comandar paineis de NOC por gestos sem armazenar camera ou identificar pessoas.",
   "topics": [
     "gesture-control",
     "noc",
@@ -25,9 +23,17 @@ export const project: ProjectConfig = {
     "computer-vision",
     "privacy-safe",
     "react",
-    "typescript"
+    "typescript",
+    "gestos",
+    "visao-computacional",
+    "github-pages",
+    "portugues-brasil",
+    "educacao-tecnologica",
+    "telecomunicacoes"
   ],
-  "description": "Privacy-safe gesture command prototype for navigating NOC dashboards without storing camera data.",
+  "deploy": true,
+  "tagline": "Comandos por gestos para navegacao em dashboards operacionais com foco em privacidade.",
+  "type": "gesture",
   "accent": "#5f5aa2",
   "secondary": "#b86f38"
-};
+};
